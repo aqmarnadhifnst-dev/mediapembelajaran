@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerangka ADDIE - Fase Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Analisis Kebutuhan Pengembangan Media Pembelajaran Interaktif Berbasis Online</h1>
+            <p>Menggunakan Kerangka ADDIE - Fase Analysis</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#survey">Template Survei Siswa</a></li>
+                <li><a href="#interview">Panduan Wawancara Guru</a></li>
+                <li><a href="#swot">Analisis SWOT</a></li>
+                <li><a href="#tools">Rekomendasi Tools</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="intro">
+            <h2>Pendahuluan</h2>
+            <p>Fase Analysis dalam kerangka ADDIE merupakan langkah awal yang penting dalam pengembangan media pembelajaran. Tujuan dari fase ini adalah untuk menganalisis kebutuhan pembelajaran, mengevaluasi situasi, dan mengidentifikasi tujuan pembelajaran untuk mencapai hasil belajar yang optimal.</p>
+            <p>Pada fase ini, kami mengumpulkan informasi tentang berbagai aspek yang akan mempengaruhi pengembangan media pembelajaran interaktif berbasis online, termasuk karakteristik peserta didik, kebutuhan guru, dan kondisi teknologi yang tersedia.</p>
+        </section>
+
+        <section id="survey">
+            <h2>Template Survei Kebutuhan Siswa</h2>
+            <p>Survei ini dirancang untuk mengumpulkan informasi tentang preferensi belajar dan kesiapan teknologi peserta didik dalam menggunakan media pembelajaran interaktif berbasis online. Informasi ini akan digunakan untuk merancang pengalaman belajar yang lebih efektif dan menarik bagi siswa.</p>
+
+            <h3>Preferensi Gaya Belajar</h3>
+            <p>Setiap individu memiliki gaya belajar yang berbeda-beda. Mengetahui preferensi gaya belajar siswa sangat penting dalam merancang media pembelajaran yang efektif.</p>
+            
+            <form id="learning-style-survey">
+                <div class="question">
+                    <label>1. Saya lebih suka belajar melalui:</label>
+                    <div>
+                        <input type="radio" id="visual" name="learning-style" value="visual">
+                        <label for="visual">Gambar, diagram, dan video (Visual)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="auditory" name="learning-style" value="auditory">
+                        <label for="auditory">Pembicaraan, musik, dan suara (Auditori)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="kinesthetic" name="learning-style" value="kinesthetic">
+                        <label for="kinesthetic">Aktivitas fisik dan praktik langsung (Kinestetik)</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label>2. Dalam memahami materi baru, saya lebih mudah dengan:</label>
+                    <div>
+                        <input type="radio" id="read-write" name="learning-representation" value="read-write">
+                        <label for="read-write">Membaca dan menulis catatan</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="visual-rep" name="learning-representation" value="visual">
+                        <label for="visual-rep">Melihat grafik dan bagan</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="audio-rep" name="learning-representation" value="audio">
+                        <label for="audio-rep">Mendengarkan penjelasan</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="hands-on" name="learning-representation" value="hands-on">
+                        <label for="hands-on">Melakukan langsung aktivitasnya</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label>3. Saat belajar, saya lebih suka:</label>
+                    <div>
+                        <input type="radio" id="work-alone" name="learning-setting" value="work-alone">
+                        <label for="work-alone">Bekerja sendiri</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="work-group" name="learning-setting" value="work-group">
+                        <label for="work-group">Bekerja dalam kelompok</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="work-both" name="learning-setting" value="work-both">
+                        <label for="work-both">Keduanya tergantung situasi</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label>4. Dalam mengingat informasi, saya lebih mudah:</label>
+                    <div>
+                        <input type="radio" id="remember-seeing" name="memory-style" value="remember-seeing">
+                        <label for="remember-seeing">Mengingat hal-hal yang saya lihat</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="remember-hearing" name="memory-style" value="remember-hearing">
+                        <label for="remember-hearing">Mengingat hal-hal yang saya dengar</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="remember-doing" name="memory-style" value="remember-doing">
+                        <label for="remember-doing">Mengingat hal-hal yang saya lakukan</label>
+                    </div>
+                </div>
+
+                <h3>Kemampuan dan Kenyamanan Menggunakan Teknologi</h3>
+                <p>Untuk mengembangkan media pembelajaran interaktif, penting bagi kami mengetahui tingkat kenyamanan dan kemampuan Anda dalam menggunakan teknologi.</p>
+                
+                <div class="question">
+                    <label>5. Seberapa nyaman Anda menggunakan perangkat teknologi untuk belajar?</label>
+                    <select name="tech-comfort" id="tech-comfort">
+                        <option value="sangat-nyaman">Sangat Nyaman</option>
+                        <option value="nyaman">Nyaman</option>
+                        <option value="kurang-nyaman">Kurang Nyaman</option>
+                        <option value="tidak-nyaman">Tidak Nyaman</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label>6. Seberapa sering Anda menggunakan aplikasi belajar online?</label>
+                    <div>
+                        <input type="radio" id="often" name="online-use" value="often">
+                        <label for="often">Setiap hari</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="sometimes" name="online-use" value="sometimes">
+                        <label for="sometimes">Beberapa kali dalam seminggu</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="rarely" name="online-use" value="rarely">
+                        <label for="rarely">Beberapa kali dalam sebulan</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="never" name="online-use" value="never">
+                        <label for="never">Tidak pernah</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label>7. Fitur teknologi pendidikan apa yang paling Anda sukai? (Pilih lebih dari satu jika diperlukan)</label>
+                    <div>
+                        <input type="checkbox" id="quiz" name="features" value="quiz">
+                        <label for="quiz">Kuis interaktif</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="video" name="features" value="video">
+                        <label for="video">Video pembelajaran</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="game" name="features" value="game">
+                        <label for="game">Game pembelajaran</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="forum" name="features" value="forum">
+                        <label for="forum">Forum diskusi</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="simulator" name="features" value="simulator">
+                        <label for="simulator">Simulator praktik</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="progress-track" name="features" value="progress-track">
+                        <label for="progress-track">Pelacakan kemajuan belajar</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label>8. Bagian mana dari teknologi pembelajaran yang paling membantu Anda memahami materi?</label>
+                    <div>
+                        <input type="radio" id="interactive-content" name="helpful-tech" value="interactive-content">
+                        <label for="interactive-content">Konten interaktif (animasi, simulasi)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="immediate-feedback" name="helpful-tech" value="immediate-feedback">
+                        <label for="immediate-feedback">Umpan balik langsung</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="personalized-path" name="helpful-tech" value="personalized-path">
+                        <label for="personalized-path">Pembelajaran yang disesuaikan dengan tingkat saya</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="social-learning" name="helpful-tech" value="social-learning">
+                        <label for="social-learning">Belajar bersama teman atau dalam komunitas</label>
+                    </div>
+                </div>
+
+                <h3>Akses Perangkat dan Koneksi Internet</h3>
+                <p>Ketersediaan perangkat dan kualitas koneksi internet sangat penting dalam menentukan jenis media pembelajaran yang akan dikembangkan.</p>
+                
+                <div class="question">
+                    <label>9. Perangkat apa yang paling sering Anda gunakan untuk belajar online?</label>
+                    <div>
+                        <input type="checkbox" id="smartphone" name="device" value="smartphone">
+                        <label for="smartphone">Smartphone</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="tablet" name="device" value="tablet">
+                        <label for="tablet">Tablet</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="laptop" name="device" value="laptop">
+                        <label for="laptop">Laptop</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="desktop" name="device" value="desktop">
+                        <label for="desktop">Komputer Desktop</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label>10. Kualitas koneksi internet Anda saat ini:</label>
+                    <select name="internet-quality" id="internet-quality">
+                        <option value="sangat-cepat">Sangat cepat (bisa streaming video HD tanpa buffering)</option>
+                        <option value="cepat">Cepat (bisa browsing dan menonton video dengan sedikit buffering)</option>
+                        <option value="sedang">Sedang (browsing lancar, video kadang buffering)</option>
+                        <option value="lambat">Lambat (browsing dan video sering terputus)</option>
+                        <option value="sangat-lambat">Sangat lambat (sering tidak bisa terhubung)</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label>11. Durasi rata-rata koneksi internet Anda dalam sehari:</label>
+                    <select name="internet-duration" id="internet-duration">
+                        <option value="lebih-6">Lebih dari 6 jam</option>
+                        <option value="3-6">3-6 jam</option>
+                        <option value="1-3">1-3 jam</option>
+                        <option value="kurang-1">Kurang dari 1 jam</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label>12. Apakah Anda memiliki akses ke lebih dari satu perangkat?</label>
+                    <div>
+                        <input type="radio" id="multi-yes" name="multi-device" value="yes">
+                        <label for="multi-yes">Ya</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="multi-no" name="multi-device" value="no">
+                        <label for="multi-no">Tidak</label>
+                    </div>
+                </div>
+
+                <h3>Harapan terhadap Media Pembelajaran Interaktif</h3>
+                <p>Kami ingin mengetahui harapan dan keinginan Anda terhadap media pembelajaran interaktif agar dapat mengembangkan solusi yang benar-benar bermanfaat.</p>
+                
+                <div class="question">
+                    <label>13. Apa yang Anda harapkan dari media pembelajaran interaktif? (Tuliskan dalam poin-poin atau paragraf)</label>
+                    <textarea name="expectations" rows="4" cols="50" placeholder="Contoh: Saya harap media pembelajaran ini menyenangkan, mudah digunakan, dan membantu saya memahami konsep dengan lebih baik..."></textarea>
+                </div>
+
+                <div class="question">
+                    <label>14. Jenis aktivitas interaktif apa yang paling menarik bagi Anda? (Pilih lebih dari satu jika diperlukan)</label>
+                    <div>
+                        <input type="checkbox" id="drag-drop" name="activities" value="drag-drop">
+                        <label for="drag-drop">Drag and drop (menggeser objek ke tempat yang benar)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="virtual-lab" name="activities" value="virtual-lab">
+                        <label for="virtual-lab">Laboratorium virtual (simulasi eksperimen)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="simulation" name="activities" value="simulation">
+                        <label for="simulation">Simulasi proses atau sistem nyata</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="branching" name="activities" value="branching">
+                        <label for="branching">Cerita bercabang (pembelajaran berbasis skenario)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="polls" name="activities" value="polls">
+                        <label for="polls">Polling dan voting (berpartisipasi dalam survei)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="virtual-field" name="activities" value="virtual-field">
+                        <label for="virtual-field">Wisata virtual (eksplorasi tempat secara digital)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="interactive-video" name="activities" value="interactive-video">
+                        <label for="interactive-video">Video interaktif (dengan pilihan atau tes di tengah)</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label>15. Seberapa pentingkah bagi Anda untuk dapat mengakses media pembelajaran secara offline (tanpa koneksi internet)?</label>
+                    <div>
+                        <input type="radio" id="sangat-penting" name="offline-importance" value="sangat-penting">
+                        <label for="sangat-penting">Sangat penting</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="penting" name="offline-importance" value="penting">
+                        <label for="penting">Penting</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cukup-penting" name="offline-importance" value="cukup-penting">
+                        <label for="cukup-penting">Cukup penting</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="tidak-penting" name="offline-importance" value="tidak-penting">
+                        <label for="tidak-penting">Tidak penting</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label>16. Faktor apa yang membuat Anda lebih termotivasi belajar menggunakan media digital? (Pilih lebih dari satu jika diperlukan)</label>
+                    <div>
+                        <input type="checkbox" id="achievement" name="motivation" value="achievement">
+                        <label for="achievement">Sistem pencapaian dan penghargaan</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="competition" name="motivation" value="competition">
+                        <label for="competition">Kompetisi dengan teman</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="personalized" name="motivation" value="personalized">
+                        <label for="personalized">Pendekatan yang disesuaikan dengan kemampuan saya</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="visual-appeal" name="motivation" value="visual-appeal">
+                        <label for="visual-appeal">Tampilan yang menarik dan profesional</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="social-aspect" name="motivation" value="social-aspect">
+                        <label for="social-aspect">Kemampuan untuk berinteraksi dengan teman</label>
+                    </div>
+                </div>
+
+                <button type="submit">Kirim Survei</button>
+            </form>
+
+            <h3>Panduan Pengisian Survei</h3>
+            <ul>
+                <li>Isilah survei ini secara jujur sesuai dengan pengalaman dan preferensi Anda</li>
+                <li>Jawaban Anda akan membantu pengembang membuat media pembelajaran yang lebih sesuai kebutuhan</li>
+                <li>Survei ini memerlukan waktu sekitar 10-15 menit untuk diisi</li>
+                <li>Semua jawaban bersifat anonim dan hanya digunakan untuk keperluan pengembangan media pembelajaran</li>
+            </ul>
+        </section>
+
+        <section id="interview">
+            <h2>Panduan Wawancara untuk Guru/Pengajar</h2>
+            <p>Panduan ini membantu dalam melakukan wawancara terhadap guru atau pengajar untuk memahami tantangan dan kebutuhan dalam pembelajaran online. Hasil wawancara akan digunakan untuk merancang media pembelajaran interaktif yang sesuai dengan kebutuhan nyata pendidik.</p>
+
+            <h3>Tantangan yang Dihadapi dalam Pembelajaran Online</h3>
+            <p>Bagian ini dirancang untuk mengidentifikasi kesulitan utama yang dihadapi guru dalam pembelajaran online.</p>
+            
+            <div class="interview-section">
+                <h4>1. Tantangan Umum dalam Pengajaran Online</h4>
+                <ul>
+                    <li>Apa saja tantangan utama yang Anda hadapi dalam mengajar secara online?</li>
+                    <li>Apakah perbedaan utama antara mengajar secara offline dan online berdasarkan pengalaman Anda?</li>
+                    <li>Bagaimana Anda menangani kurangnya respon atau keterlibatan dari siswa selama pembelajaran?</li>
+                    <li>Apa kendala yang Anda hadapi dalam menyampaikan materi tertentu secara online?</li>
+                    <li>Apa yang menurut Anda menjadi faktor utama yang mempengaruhi motivasi belajar siswa secara online?</li>
+                    <li>Bagaimana Anda mengatasi kesenjangan dalam akses teknologi di antara siswa Anda?</li>
+                    <li>Apa dampak dari keterbatasan interaksi tatap muka terhadap pembelajaran siswa?</li>
+                </ul>
+            </div>
+
+            <div class="interview-section">
+                <h4>2. Manajemen Kelas dan Engagement</h4>
+                <ul>
+                    <li>Bagaimana Anda mengelola perilaku siswa selama pembelajaran online?</li>
+                    <li>Apa strategi yang Anda gunakan untuk menjaga keterlibatan siswa selama kelas online?</li>
+                    <li>Bagaimana Anda menilai sejauh mana siswa memahami materi dalam pembelajaran online?</li>
+                    <li>Apa saja hambatan dalam memberikan umpan balik yang efektif kepada siswa secara online?</li>
+                    <li>Bagaimana Anda memantau kehadiran dan partisipasi siswa?</li>
+                    <li>Apa strategi yang Anda gunakan untuk membuat siswa tetap fokus selama pembelajaran?</li>
+                </ul>
+            </div>
+
+            <div class="interview-section">
+                <h4>3. Komunikasi dan Interaksi</h4>
+                <ul>
+                    <li>Bagaimana Anda menjalin komunikasi yang efektif dengan siswa secara online?</li>
+                    <li>Apa tantangan utama dalam komunikasi dengan siswa yang memiliki kemampuan teknologi berbeda?</li>
+                    <li>Bagaimana Anda menangani siswa yang tidak aktif atau tidak merespons?</li>
+                    <li>Apakah Anda memiliki saluran komunikasi khusus selain jam pelajaran?</li>
+                    <li>Apa tantangan dalam menjaga komunikasi dengan orang tua/wali murid?</li>
+                </ul>
+            </div>
+
+            <h3>Kebutuhan Konten dan Fitur Interaktif</h3>
+            <p>Bagian ini membahas kebutuhan guru terhadap konten dan fitur yang akan membantu dalam proses pembelajaran.</p>
+            
+            <div class="interview-section">
+                <h4>4. Jenis dan Format Konten Pembelajaran</h4>
+                <ul>
+                    <li>Jenis konten pembelajaran seperti apa yang paling efektif untuk siswa Anda?</li>
+                    <li>Bagaimana seharusnya konten disajikan agar lebih menarik dan mudah dipahami?</li>
+                    <li>Apa saja materi pelajaran yang menurut Anda perlu disajikan dalam format interaktif?</li>
+                    <li>Bagaimana cara terbaik untuk mengintegrasikan konten dengan aktivitas belajar siswa?</li>
+                    <li>Apa yang menjadi standar kualitas konten yang Anda cari dalam media pembelajaran?</li>
+                    <li>Apakah Anda memerlukan konten yang dapat diadaptasi untuk siswa dengan berbagai tingkat kemampuan?</li>
+                    <li>Bagaimana struktur konten ideal yang mendukung pembelajaran mandiri?</li>
+                </ul>
+            </div>
+
+            <div class="interview-section">
+                <h4>5. Fitur Interaktif yang Diperlukan</h4>
+                <ul>
+                    <li>Fitur interaktif apa saja yang menurut Anda penting dalam media pembelajaran?</li>
+                    <li>Bagaimana fitur interaktif dapat meningkatkan hasil belajar siswa?</li>
+                    <li>Apa yang menjadi perhatian utama Anda dalam merancang aktivitas interaktif?</li>
+                    <li>Bisakah Anda memberikan contoh aktivitas interaktif yang telah berhasil Anda terapkan?</li>
+                    <li>Bagaimana Anda menilai efektivitas dari fitur interaktif dalam pembelajaran?</li>
+                    <li>Apa fitur kolaborasi yang Anda perlukan untuk memfasilitasi kerja kelompok?</li>
+                    <li>Fitur penilaian otomatis seperti apa yang akan membantu pekerjaan Anda?</li>
+                </ul>
+            </div>
+
+            <div class="interview-section">
+                <h4>6. Penilaian dan Evaluasi</h4>
+                <ul>
+                    <li>Bagaimana Anda saat ini menilai pemahaman siswa dalam pembelajaran online?</li>
+                    <li>Apa saja tantangan dalam memberikan penilaian secara online?</li>
+                    <li>Jenis penilaian seperti apa yang paling efektif dalam pembelajaran online?</li>
+                    <li>Fitur penilaian seperti apa yang Anda inginkan dalam media pembelajaran interaktif?</li>
+                    <li>Bagaimana Anda mencegah kecurangan dalam penilaian online?</li>
+                    <li>Apa yang Anda perlukan untuk membuat penilaian menjadi lebih efektif?</li>
+                    <li>Bagaimana Anda memberikan umpan balik yang bermakna dalam konteks online?</li>
+                </ul>
+            </div>
+
+            <div class="interview-section">
+                <h4>7. Penyesuaian dan Personalisasi</h4>
+                <ul>
+                    <li>Seberapa pentingkah penyesuaian konten berdasarkan kemampuan siswa?</li>
+                    <li>Fitur seperti apa yang Anda perlukan untuk menyesuaikan pembelajaran?</li>
+                    <li>Bagaimana sistem pembelajaran bisa mendeteksi kebutuhan individu siswa?</li>
+                    <li>Apa yang Anda perlukan untuk mengakomodasi gaya belajar berbeda dalam kelas Anda?</li>
+                    <li>Bagaimana penyesuaian konten bisa membantu siswa yang tertinggal atau lebih cepat?</li>
+                </ul>
+            </div>
+
+            <h3>Teknologi yang Tersedia dan Kepahaman Guru</h3>
+            <p>Bagian ini mengkaji tingkat kesiapan teknologi dan kemampuan guru dalam menggunakan teknologi pembelajaran.</p>
+            
+            <div class="interview-section">
+                <h4>8. Infrastruktur dan Platform Tersedia</h4>
+                <ul>
+                    <li>Perangkat teknologi apa yang tersedia di lingkungan Anda untuk kegiatan pembelajaran?</li>
+                    <li>Apa saja platform atau aplikasi pembelajaran yang sudah familiar bagi Anda?</li>
+                    <li>Bagaimana kualitas koneksi internet di tempat Anda mengajar?</li>
+                    <li>Apa kebijakan sekolah terkait penggunaan teknologi dalam pembelajaran?</li>
+                    <li>Platform mana yang paling Anda sukai dan mengapa?</li>
+                    <li>Apa keterbatasan dari platform yang saat ini Anda gunakan?</li>
+                    <li>Apa yang Anda harapkan dari platform pembelajaran yang ideal?</li>
+                </ul>
+            </div>
+
+            <div class="interview-section">
+                <h4>9. Keterampilan dan Pelatihan Teknologi</h4>
+                <ul>
+                    <li>Apa saja keterampilan teknologi yang menurut Anda perlu ditingkatkan?</li>
+                    <li>Apakah Anda pernah mengikuti pelatihan penggunaan teknologi pembelajaran?</li>
+                    <li>Jenis pelatihan seperti apa yang menurut Anda paling membantu?</li>
+                    <li>Bagaimana Anda biasanya belajar menggunakan teknologi baru dalam pembelajaran?</li>
+                    <li>Berapa lama waktu yang biasanya Anda butuhkan untuk menguasai alat pembelajaran baru?</li>
+                    <li>Apa sumber daya pelatihan yang paling efektif bagi Anda?</li>
+                    <li>Berapa sering Anda memerlukan dukungan teknis?</li>
+                </ul>
+            </div>
+
+            <div class="interview-section">
+                <h4>10. Dukungan dan Implementasi</h4>
+                <ul>
+                    <li>Apa dukungan teknis yang Anda perlukan dalam mengadopsi media pembelajaran interaktif?</li>
+                    <li>Apa dukungan administrasi yang Anda perlukan?</li>
+                    <li>Bagaimana Anda mengintegrasikan media pembelajaran dengan kurikulum yang ada?</li>
+                    <li>Apa pertimbangan utama Anda dalam memilih media pembelajaran untuk kelas Anda?</li>
+                    <li>Bagaimana Anda mengkomunikasikan penggunaan media baru kepada siswa dan orang tua?</li>
+                    <li>Apakah Anda memiliki waktu dan tempat untuk mengembangkan konten pembelajaran khusus?</li>
+                    <li>Apa indikator keberhasilan yang ingin Anda capai dari implementasi media baru?</li>
+                </ul>
+            </div>
+
+            <div class="interview-section">
+                <h4>11. Penilaian Kebutuhan Khusus</h4>
+                <ul>
+                    <li>Bagaimana media pembelajaran bisa mendukung siswa dengan kebutuhan khusus?</li>
+                    <li>Apa fitur aksesibilitas yang penting untuk siswa dengan berbagai kebutuhan?</li>
+                    <li>Bagaimana Anda menyesuaikan pembelajaran untuk siswa yang memiliki keterbatasan teknologi?</li>
+                    <li>Apa yang Anda perlukan untuk mendukung siswa dengan berbagai latar belakang?</li>
+                    <li>Bagaimana penilaian bisa disesuaikan untuk siswa dengan berbagai kemampuan?</li>
+                </ul>
+            </div>
+
+            <h3>Panduan Pelaksanaan Wawancara</h3>
+            <ul>
+                <li>Sediakan waktu yang cukup untuk wawancara (minimal 45 menit)</li>
+                <li>Ciptakan suasana yang nyaman dan tidak formal</li>
+                <li>Dengarkan secara aktif dan catat jawaban penting</li>
+                <li>Hindari mengarahkan jawaban responden</li>
+                <li>Ikuti perkembangan percakapan dan ajukan pertanyaan mengikuti</li>
+                <li>Dokumentasikan hasil wawancara untuk analisis lebih lanjut</li>
+            </ul>
+        </section>
+
+        <section id="swot">
+            <h2>Analisis SWOT untuk Implementasi Media Pembelajaran Interaktif</h2>
+            <p>Analisis SWOT (Strengths, Weaknesses, Opportunities, Threats) membantu memahami faktor internal dan eksternal yang mempengaruhi implementasi media pembelajaran interaktif berbasis online. Analisis ini akan memberikan gambaran menyeluruh tentang kondisi yang mendukung dan menghambat keberhasilan implementasi.</p>
+
+            <table class="swot-table">
+                <thead>
+                    <tr>
+                        <th>Strengths (Kekuatan)</th>
+                        <th>Weaknesses (Kelemahan)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h4>Sumber Daya dan Dukungan</h4>
+                            <ul>
+                                <li>Media pembelajaran interaktif dapat meningkatkan motivasi dan keterlibatan siswa</li>
+                                <li>Dapat menyesuaikan kecepatan dan pendekatan pembelajaran dengan gaya belajar siswa</li>
+                                <li>Meningkatkan hasil belajar melalui pendekatan pembelajaran yang lebih aktif</li>
+                                <li>Dapat mencatat data pembelajaran untuk analisis lebih lanjut</li>
+                                <li>Meningkatkan aksesibilitas pembelajaran bagi siswa dari berbagai lokasi</li>
+                                <li>Memungkinkan pembelajaran mandiri dan fleksibel</li>
+                                <li>Dapat mengintegrasikan berbagai bentuk media (teks, audio, video, animasi)</li>
+                                <li>Memungkinkan pelacakan kemajuan belajar secara real-time</li>
+                            </ul>
+                            
+                            <h4>Keunggulan Teknologi</h4>
+                            <ul>
+                                <li>Media interaktif memungkinkan pembelajaran yang disesuaikan dengan kebutuhan individu</li>
+                                <li>Meningkatkan daya ingat melalui pengalaman belajar yang lebih mendalam</li>
+                                <li>Memungkinkan umpan balik instan yang membantu siswa belajar lebih cepat</li>
+                                <li>Dukungan terhadap berbagai gaya belajar (visual, auditori, kinestetik)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <h4>Keterbatasan Infrastruktur</h4>
+                            <ul>
+                                <li>Keterbatasan infrastruktur teknologi (internet, perangkat) di kalangan siswa</li>
+                                <li>Biaya tinggi untuk pengembangan dan pemeliharaan media interaktif</li>
+                                <li>Keterbatasan keterampilan teknologi guru dan siswa</li>
+                                <li>Kurangnya waktu dan sumber daya untuk pelatihan</li>
+                                <li>Kompleksitas dalam desain dan pengembangan media</li>
+                                <li>Kesulitan dalam menyesuaikan dengan kurikulum yang ada</li>
+                                <li>Risiko penurunan interaksi sosial antar siswa dan guru</li>
+                            </ul>
+                            
+                            <h4>Tantangan Implementasi</h4>
+                            <ul>
+                                <li>Resistensi terhadap perubahan dari sebagian guru dan siswa</li>
+                                <li>Ketergantungan pada teknologi yang bisa mengalami gangguan</li>
+                                <li>Waktu yang dibutuhkan untuk adaptasi terhadap media baru</li>
+                                <li>Kesulitan dalam menjamin keamanan data pembelajaran</li>
+                                <li>Kesulitan dalam menyediakan dukungan teknis yang memadai</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Opportunities (Peluang)</th>
+                        <th>Threats (Ancaman)</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Tren dan Dukungan</h4>
+                            <ul>
+                                <li>Perkembangan teknologi yang semakin canggih dan terjangkau</li>
+                                <li>Dukungan kebijakan pemerintah terhadap transformasi digital pendidikan</li>
+                                <li>Kebutuhan tinggi akan solusi pembelajaran jarak jauh pasca-pandemi</li>
+                                <li>Kemajuan dalam teknologi pembelajaran adaptif dan AI</li>
+                                <li>Kerjasama dengan lembaga pendidikan dan teknologi</li>
+                                <li>Potensi untuk diakses secara global</li>
+                                <li>Pengembangan keterampilan abad 21 bagi siswa</li>
+                            </ul>
+                            
+                            <h4>Potensi Pasar</h4>
+                            <ul>
+                                <li>Peningkatan permintaan terhadap solusi pembelajaran digital</li>
+                                <li>Kemungkinan peningkatan dana pendidikan untuk teknologi</li>
+                                <li>Permintaan untuk pembelajaran sepanjang hayat</li>
+                                <li>Kesempatan untuk inovasi dalam pendidikan</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <h4>Persaingan dan Kebijakan</h4>
+                            <ul>
+                                <li>Perubahan kebijakan pendidikan yang cepat dan tidak menentu</li>
+                                <li>Persaingan dengan platform pembelajaran online yang sudah mapan</li>
+                                <li>Keterbatasan anggaran untuk investasi teknologi</li>
+                                <li>Perbedaan akses teknologi antar wilayah</li>
+                                <li>Resistensi terhadap perubahan dari berbagai pihak</li>
+                            </ul>
+                            
+                            <h4>Risiko Teknologi</h4>
+                            <ul>
+                                <li>Risiko keamanan dan privasi data siswa</li>
+                                <li>Ketergantungan pada teknologi yang bisa mengalami gangguan</li>
+                                <li>Risiko kegagalan teknologi atau tidak kompatibel</li>
+                                <li>Perkembangan teknologi yang terlalu cepat (obsolescence)</li>
+                                <li>Kemungkinan munculnya teknologi alternatif yang lebih baik</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Implementasi Hasil SWOT</h3>
+            <p>Hasil analisis SWOT di atas dapat digunakan untuk merumuskan strategi dalam mengembangkan dan mengimplementasikan media pembelajaran interaktif:</p>
+            
+            <div class="swot-strategy">
+                <h4>Strategi SO (Strengths-Opportunities)</h4>
+                <p>Memanfaatkan kekuatan internal untuk memanfaatkan peluang eksternal:</p>
+                <ul>
+                    <li>Gunakan kemampuan untuk menyediakan pembelajaran yang disesuaikan (kekuatan) untuk memenuhi permintaan tinggi akan solusi pembelajaran digital (peluang)</li>
+                    <li>Gunakan integrasi berbagai bentuk media (kekuatan) untuk memenuhi dukungan kebijakan terhadap transformasi digital pendidikan (peluang)</li>
+                    <li>Manfaatkan peningkatan motivasi siswa (kekuatan) untuk memperluas akses global (peluang)</li>
+                </ul>
+            </div>
+            
+            <div class="swot-strategy">
+                <h4>Strategi WO (Weaknesses-Opportunities)</h4>
+                <p>Mengatasi kelemahan internal untuk memanfaatkan peluang eksternal:</p>
+                <ul>
+                    <li>Investasi dalam pelatihan teknologi (untuk mengatasi keterbatasan keterampilan) untuk memenuhi permintaan solusi pembelajaran digital</li>
+                    <li>Perbaiki infrastruktur teknologi untuk memanfaatkan dana pendidikan yang tersedia</li>
+                    <li>Atasi keterbatasan waktu untuk pelatihan dengan pendekatan pelatihan terpadu dan efisien</li>
+                </ul>
+            </div>
+            
+            <div class="swot-strategy">
+                <h4>Strategi ST (Strengths-Threats)</h4>
+                <p>Memanfaatkan kekuatan internal untuk menghindari ancaman eksternal:</p>
+                <ul>
+                    <li>Gunakan kemampuan pelacakan kemajuan untuk menjawab kekhawatiran tentang efektivitas pembelajaran online</li>
+                    <li>Manfaatkan fleksibilitas media untuk bersaing dengan platform pembelajaran yang sudah mapan</li>
+                    <li>Gunakan pendekatan pembelajaran aktif untuk mengatasi resistensi terhadap perubahan</li>
+                </ul>
+            </div>
+            
+            <div class="swot-strategy">
+                <h4>Strategi WT (Weaknesses-Threats)</h4>
+                <p>Mengurangi kelemahan internal dan mencegah ancaman eksternal:</p>
+                <ul>
+                    <li>Bentuk kemitraan dengan lembaga teknologi untuk mengatasi keterbatasan sumber daya dan mengurangi risiko keamanan data</li>
+                    <li>Desain solusi yang fleksibel untuk mengatasi perubahan kebijakan pendidikan</li>
+                    <li>Gunakan pendekatan bertahap untuk mengurangi resistensi dan risiko kegagalan teknologi</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="tools">
+            <h2>Rekomendasi Tools untuk Pengumpulan Data</h2>
+            <p>Beberapa alat yang direkomendasikan untuk pengumpulan data dalam fase analisis kebutuhan ini, lengkap dengan contoh implementasinya. Pemilihan alat tergantung pada sumber daya, kebutuhan spesifik, dan tingkat kompleksitas yang diperlukan.</p>
+
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>Google Forms</h3>
+                    <p>Alat gratis dari Google untuk membuat formulir survei dan kuesioner. Cocok untuk pengumpulan data skala kecil hingga menengah.</p>
+                    <h4>Kelebihan:</h4>
+                    <ul>
+                        <li>Gratis dan mudah digunakan</li>
+                        <li>Terintegrasi dengan Google Sheets untuk analisis data</li>
+                        <li>Responsif di berbagai perangkat</li>
+                        <li>Memungkinkan pengaturan logika percabangan</li>
+                        <li>Mendukung berbagai jenis pertanyaan</li>
+                        <li>Memungkinkan kolaborasi dalam pembuatan formulir</li>
+                        <li>Menyediakan grafik dasar untuk analisis cepat</li>
+                    </ul>
+                    <h4>Kekurangan:</h4>
+                    <ul>
+                        <li>Terbatas dalam kustomisasi tampilan</li>
+                        <li>Fitur analisis data terbatas</li>
+                        <li>Kurangnya kontrol lanjutan terhadap logika survei</li>
+                    </ul>
+                    <h4>Contoh Implementasi:</h4>
+                    <ol>
+                        <li>Buka Google Forms (forms.google.com)</li>
+                        <li>Pilih template "Kuisioner" atau mulai dari awal</li>
+                        <li>Buat judul survei "Analisis Kebutuhan Pembelajaran Interaktif"</li>
+                        <li>Buat pertanyaan berdasarkan template survei yang telah disediakan</li>
+                        <li>Tambahkan berbagai jenis pertanyaan (pilihan ganda, kotak centang, esai)</li>
+                        <li>Atur tampilan menggunakan tema yang tersedia</li>
+                        <li>Gunakan fitur "Kondisional" untuk logika percabangan</li>
+                        <li>Bagikan tautan atau sematkan formulir ke situs web</li>
+                        <li>Lihat respons langsung di Google Sheets dan bagikan dengan tim</li>
+                    </ol>
+                    <h4>Contoh Kasus:</h4>
+                    <p>Gunakan Google Forms untuk menyebarkan survei kebutuhan siswa ke seluruh kelas karena mudah diakses dan tidak memerlukan akun khusus.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h3>SurveyMonkey</h3>
+                    <p>Platform survei profesional dengan berbagai fitur lanjutan. Cocok untuk survei yang lebih kompleks dan analisis mendalam.</p>
+                    <h4>Kelebihan:</h4>
+                    <ul>
+                        <li>Banyak template survei yang sudah disediakan</li>
+                        <li>Fitur analisis data yang canggih</li>
+                        <li>Personalisasi merek dan tampilan</li>
+                        <li>Integrasi dengan berbagai platform</li>
+                        <li>Alat statistik lanjutan</li>
+                        <li>Fitur randomisasi pertanyaan</li>
+                        <li>Kemampuan untuk menangani survei berskala besar</li>
+                    </ul>
+                    <h4>Kekurangan:</h4>
+                    <ul>
+                        <li>Model berbayar untuk fitur lanjutan</li>
+                        <li>Kurva belajar yang lebih curam</li>
+                        <li>Ketergantungan pada koneksi internet</li>
+                    </ul>
+                    <h4>Contoh Implementasi:</h4>
+                    <ol>
+                        <li>Buat akun di surveymonkey.com</li>
+                        <li>Pilih template "Education Survey" atau "Student Feedback"</li>
+                        <li>Sesuaikan pertanyaan dengan kebutuhan analisis ADDIE</li>
+                        <li>Tambahkan logika kondisional untuk alur survei yang cerdas</li>
+                        <li>Gunakan fitur desain untuk meningkatkan tampilan dan pengalaman pengguna</li>
+                        <li>Terapkan fitur randomisasi jika diperlukan</li>
+                        <li>Bagikan survei melalui email atau tautan</li>
+                        <li>Gunakan dashboard analisis untuk melihat tren dan wawasan</li>
+                    </ol>
+                    <h4>Contoh Kasus:</h4>
+                    <p>Gunakan SurveyMonkey untuk survei komprehensif dengan analisis lanjutan tentang preferensi belajar dan akses teknologi siswa.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h3>Microsoft Forms</h3>
+                    <p>Alternatif dari Microsoft untuk membuat formulir dan kuis. Cocok untuk institusi yang menggunakan ekosistem Microsoft.</p>
+                    <h4>Kelebihan:</h4>
+                    <ul>
+                        <li>Terintegrasi dengan Office 365 dan Teams</li>
+                        <li>Antarmuka yang sederhana dan intuitif</li>
+                        <li>Pengaturan izin kolaborasi</li>
+                        <li>Fitur respons otomatis</li>
+                        <li>Bisa digunakan di dalam Teams untuk distribusi otomatis</li>
+                        <li>Analisis dasar dan grafik</li>
+                        <li>Kompatibel dengan Excel untuk analisis lanjutan</li>
+                    </ul>
+                    <h4>Kekurangan:</h4>
+                    <ul>
+                        <li>Kurang fleksibel dibandingkan platform lain</li>
+                        <li>Terbatas pada pengguna Microsoft 365</li>
+                        <li>Fitur analisis terbatas</li>
+                    </ul>
+                    <h4>Contoh Implementasi:</h4>
+                    <ol>
+                        <li>Buka forms.microsoft.com</li>
+                        <li>Pilih "Form Baru" atau gunakan template "Survey"</li>
+                        <li>Tambahkan pertanyaan survei untuk analisis kebutuhan siswa</li>
+                        <li>Gunakan fitur "Tampilan" untuk menyesuaikan desain dengan branding sekolah</li>
+                        <li>Terapkan validasi respons jika diperlukan</li>
+                        <li>Gunakan fitur "Berbagi" untuk mendistribusikan formulir</li>
+                        <li>Sematkan formulir di Teams atau bagikan melalui tautan</li>
+                        <li>Lihat hasil di Excel Online atau Teams</li>
+                    </ol>
+                    <h4>Contoh Kasus:</h4>
+                    <p>Gunakan Microsoft Forms di sekolah yang sudah menerapkan Office 365 untuk memudahkan distribusi dan integrasi dengan sistem pembelajaran yang ada.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h3>Qualtrics</h3>
+                    <p>Platform survei enterprise dengan kemampuan analisis lanjutan. Cocok untuk penelitian dan analisis yang kompleks.</p>
+                    <h4>Kelebihan:</h4>
+                    <ul>
+                        <li>Kemampuan pemrograman lanjutan</li>
+                        <li>Alat analisis data yang sangat kuat</li>
+                        <li>Manajemen merek yang lengkap</li>
+                        <li>Integrasi dengan sistem lain</li>
+                        <li>Fitur randomisasi dan kontrol tampilan tingkat lanjut</li>
+                        <li>Platform untuk berbagai jenis penelitian (XR, CX, EX)</li>
+                        <li>Keamanan data tingkat enterprise</li>
+                    </ul>
+                    <h4>Kekurangan:</h4>
+                    <ul>
+                        <li>Harga yang mahal</li>
+                        <li>Kurva belajar yang curam</li>
+                        <li>Terlalu kompleks untuk kebutuhan sederhana</li>
+                    </ul>
+                    <h4>Contoh Implementasi:</h4>
+                    <ol>
+                        <li>Dapatkan akses institusi ke Qualtrics</li>
+                        <li>Gunakan "Survey Builder" untuk membuat formulir kompleks</li>
+                        <li>Terapkan logika percabangan dan randomisasi yang canggih</li>
+                        <li>Tambahkan randomisasi pertanyaan dan kontrol tampilan lanjutan</li>
+                        <li>Gunakan "Look and Feel" untuk kustomisasi menyeluruh</li>
+                        <li>Distribusikan melalui "Distributions" dengan berbagai metode</li>
+                        <li>Gunakan "Analytical Hub" untuk analisis data lanjutan</li>
+                    </ol>
+                    <h4>Contoh Kasus:</h4>
+                    <p>Gunakan Qualtrics untuk penelitian komprehensif tentang efektivitas media pembelajaran dengan analisis statistik lanjutan dan kontrol kualitas data yang ketat.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h3>Google Jamboard</h3>
+                    <p>Papan tulis digital untuk kolaborasi visual. Cocok untuk sesi wawancara dan diskusi kelompok.</p>
+                    <h4>Kelebihan:</h4>
+                    <ul>
+                        <li>Antarmuka yang intuitif dan mudah digunakan</li>
+                        <li>Memungkinkan kolaborasi real-time</li>
+                        <li>Terintegrasi dengan akun Google</li>
+                        <li>Dukungan untuk berbagai jenis konten visual</li>
+                        <li>Gratis untuk pengguna Google</li>
+                        <li>Memudahkan visualisasi ide dan konsep</li>
+                    </ul>
+                    <h4>Kekurangan:</h4>
+                    <ul>
+                        <li>Terbatas dalam fitur analisis</li>
+                        <li>Memerlukan perangkat layar sentuh untuk pengalaman terbaik</li>
+                        <li>Ketergantungan pada koneksi internet</li>
+                    </ul>
+                    <h4>Contoh Implementasi:</h4>
+                    <ol>
+                        <li>Buka jamboard.google.com</li>
+                        <li>Buat papan jamboard baru untuk sesi wawancara</li>
+                        <li>Gunakan berbagai alat untuk mencatat ide dan tanggapan guru</li>
+                        <li>Undang guru untuk berkolaborasi secara real-time</li>
+                        <li>Gunakan sticky notes untuk mencatat poin penting</li>
+                        <li>Simpan papan sebagai referensi atau dokumentasi</li>
+                        <li>Bagikan kepada tim pengembang untuk review</li>
+                    </ol>
+                    <h4>Contoh Kasus:</h4>
+                    <p>Gunakan Jamboard dalam sesi wawancara online dengan guru untuk mencatat ide-ide dan menciptakan peta konsep kebutuhan pembelajaran secara visual.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h3>Miro</h3>
+                    <p>Platform kolaborasi visual untuk brainstorming dan perencanaan. Cocok untuk sesi analisis kebutuhan.</p>
+                    <h4>Kelebihan:</h4>
+                    <ul>
+                        <li>Antarmuka yang sangat fleksibel dan kaya fitur</li>
+                        <li>Template khusus untuk berbagai tujuan (SWOT, analisis stakeholder, dll)</li>
+                        <li>Memungkinkan kolaborasi real-time dengan banyak peserta</li>
+                        <li>Integrasi dengan berbagai alat produktivitas</li>
+                        <li>Dukungan untuk video conference langsung di platform</li>
+                        <li>Fitur komentar dan voting</li>
+                    </ul>
+                    <h4>Kekurangan:</h4>
+                    <ul>
+                        <li>Model berbayar untuk fitur lanjutan</li>
+                        <li>Kurva belajar yang lebih curam</li>
+                        <li>Bisa terasa terlalu kompleks untuk kebutuhan sederhana</li>
+                    </ul>
+                    <h4>Contoh Implementasi:</h4>
+                    <ol>
+                        <li>Buat akun di miro.com</li>
+                        <li>Pilih template "SWOT Analysis" atau "Stakeholder Map"</li>
+                        <li>Undang tim pengembang dan stakholder untuk berkontribusi</li>
+                        <li>Gunakan sticky notes untuk mencatat kebutuhan dari berbagai sumber</li>
+                        <li>Gunakan fitur voting untuk memprioritaskan kebutuhan</li>
+                        <li>Gunakan fitur komentar untuk diskusi lebih lanjut</li>
+                        <li>Ekspor hasil sebagai dokumentasi</li>
+                    </ol>
+                    <h4>Contoh Kasus:</h4>
+                    <p>Gunakan Miro untuk sesi workshop ADDIE dengan tim pengembang, guru, dan stakholder lainnya untuk secara visual mengidentifikasi kebutuhan dan mengembangkan rencana.</p>
+                </div>
+            </div>
+
+            <h3>Rekomendasi Penggunaan Berdasarkan Konteks</h3>
+            <div class="recommendations">
+                <h4>Skala Sekolah/Kampus</h4>
+                <ul>
+                    <li><strong>Google Forms:</strong> Untuk survei kecil hingga menengah, distribusi cepat, dan analisis dasar</li>
+                    <li><strong>Microsoft Forms:</strong> Jika institusi menggunakan ekosistem Microsoft 365</li>
+                    <li><strong>SurveyMonkey:</strong> Untuk survei dengan kebutuhan analisis lebih kompleks</li>
+                </ul>
+                
+                <h4>Skala Proyek Besar</h4>
+                <ul>
+                    <li><strong>Qualtrics:</strong> Untuk penelitian komprehensif dan analisis statistik lanjutan</li>
+                    <li><strong>Miro:</strong> Untuk sesi kolaborasi intensif dengan banyak stakeholder</li>
+                </ul>
+                
+                <h4>Wawancara dan Diskusi Kelompok</h4>
+                <ul>
+                    <li><strong>Google Jamboard:</strong> Untuk sesi kolaborasi visual sederhana</li>
+                    <li><strong>Miro:</strong> Untuk workshop dan brainstorming lanjutan</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <section id="conclusion">
+        <div class="container">
+            <h2>Kesimpulan</h2>
+            <p>Fase Analysis dalam kerangka ADDIE merupakan fondasi penting dalam pengembangan media pembelajaran interaktif berbasis online. Dengan menggunakan panduan yang telah disediakan dalam website ini, pengembang dapat:</p>
+            
+            <ul>
+                <li><strong>Menganalisis kebutuhan siswa</strong> secara menyeluruh melalui survei yang mencakup preferensi gaya belajar, kemampuan teknologi, dan harapan terhadap media pembelajaran</li>
+                <li><strong>Mengidentifikasi tantangan dan kebutuhan guru</strong> melalui wawancara terstruktur untuk memahami hambatan dalam pembelajaran online</li>
+                <li><strong>Melakukan analisis SWOT</strong> untuk memahami faktor-faktor internal dan eksternal yang mempengaruhi implementasi media pembelajaran</li>
+                <li><strong>Memilih alat yang tepat</strong> untuk pengumpulan data berdasarkan konteks dan kebutuhan spesifik</li>
+            </ul>
+            
+            <p>Data dan informasi yang dikumpulkan dalam fase ini akan menjadi dasar dalam perancangan (Design), pengembangan (Development), implementasi (Implementation), dan evaluasi (Evaluation) media pembelajaran interaktif yang efektif dan sesuai dengan kebutuhan pengguna.</p>
+            
+            <p>Dengan pendekatan sistematis yang didasarkan pada analisis kebutuhan yang komprehensif, diharapkan media pembelajaran yang dikembangkan dapat meningkatkan kualitas pembelajaran dan memberikan pengalaman belajar yang lebih menarik dan efektif bagi siswa.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Dibuat sebagai bagian dari implementasi kerangka ADDIE untuk pengembangan media pembelajaran interaktif</p>
+        </div>
+    </footer>
+</body>
+</html>
